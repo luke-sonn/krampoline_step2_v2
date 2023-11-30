@@ -4,6 +4,6 @@ WORKDIR /usr/src/app
 COPY krampoline/ ./
 RUN npm ci
 RUN npm run build
-RUN npm install -g serve
+# RUN npm install -g serve
 EXPOSE 3000
-CMD ["serve", "build"]
+CMD ["start", "build"]
